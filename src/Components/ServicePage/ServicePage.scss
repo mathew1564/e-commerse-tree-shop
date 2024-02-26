@@ -1,0 +1,54 @@
+@import '../../setting';
+
+.service-main{
+    font-family: $font_primary;
+    margin-top: calc($h-topbar + 60px);
+   .p-breadcrumb {
+    border: none;
+}
+    
+}
+.wsh-content{
+    p{
+        font-size: 25px;
+        color: #767575;    
+    }
+    h3{
+        color: $color_text;
+    }
+    span{
+        line-height: 30px;
+        opacity: 0.5;
+        margin-bottom: 10px;
+    }
+
+}
+.item-slide{
+     max-height: 400px !important;
+}
+.carousel-item.img-slide{
+    object-fit: contain !important ;
+}
+// gift
+.bg-gift{
+    background-color: #F6F5F1;
+    padding: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.gift-service{
+
+    
+}
+
+// buton
+.btn-more{
+    width: 25%;
+    background-color: #8F9F82 !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    
+}
+.btn-more:hover{
+    background-color: #000000 !important;
+}

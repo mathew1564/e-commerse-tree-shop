@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    cursor: url('./assets/image/mouse.png');
+}
+$h_topbar: 76px;
+
+$font_primary:'Inter', sans-serif;
+$bg_topbar:#ECF1ED;
+
+$bg_btn_2:rgb(14, 98, 18);
+
+$bg_second: #52C452;
+$color_text: #204322;
+
+
+.fui-button-shiny-3 {
+  padding: 16px 32px;
+  border: 2px solid #1dc071;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1dc071;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-transform: capitalize;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .9), transparent);
+    transition: all linear .2s;
+  }
+  &:hover {
+    background-color: #1dc071;
+    color: white;
+    &::before {
+      left: 100%;
+    }
+  }
+}
+$h_nav_mb:75px;
+

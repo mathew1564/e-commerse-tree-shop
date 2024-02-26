@@ -1,0 +1,23 @@
+.img-card {
+    width: 100%!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    border: white!important;
+    background-color: rgb(238, 235, 235)!important;
+    border-radius: 68px!important;
+
+}
+
+
+.img-current,.img-1, .img-2  {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+
+    @media screen and (min-width: 280px) and (max-width: 767px) {
+        width: 200px;
+        height: 283px;
+
+    }
+}

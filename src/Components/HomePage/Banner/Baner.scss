@@ -1,0 +1,219 @@
+@import "../../../setting";
+.banner-slide {
+  margin-top: 50px;
+  z-index: -5;
+}
+.carousel-caption {
+  color: #000000 !important;
+}
+.carousel-indicators {
+  display: none !important;
+}
+.carousel-control-prev {
+  .carousel-control-prev-icon {
+    width: 24px !important;
+    &:hover {
+    }
+  }
+}
+.carousel-control-next-icon {
+  width: 24px !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5% !important;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.img-banner {
+  display: flex;
+  justify-content: center;
+}
+.content-left {
+  margin-top: calc($h-topbar + 25px) !important;
+}
+.banner-text {
+  h2 {
+    width: 70%;
+    color: #204322;
+    font-family: Inter;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px; /* 66.667% */
+    letter-spacing: -0.408px;
+  }
+  p {
+    color: #666;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: -0.408px;
+  }
+}
+.banner-warrper {
+  font-family: $font_primary;
+  justify-content: space-between;
+  z-index: -5;
+}
+// .img-banner {
+//   position: relative; /* Để có context cho pseudo-element */
+// }
+
+// .img-banner::before {
+//   content: "";
+//   position: absolute;
+//   top: 40%;
+//   left: 0;
+//   width: 97%;
+//   height: 100%;
+//   // transform: translate(10%, 0);
+//   background: linear-gradient(
+//     180deg,
+//     #dfdad6 0%,
+//     rgba(217, 217, 217, 0) 44.99%
+//   );
+//   z-index: -1; /* Đặt z-index thấp hơn để nằm dưới hình ảnh */
+//   border-radius: 50px 50px 0px 0px;
+// }
+.banner-img-slide {
+  display: flex;
+  justify-items: end;
+  .img-left {
+    object-fit: contain;
+  }
+}
+.carousel{
+  // z-index: -1 !important;
+}
+
+.carousel-control-prev {
+  left: -55px !important;
+}
+.carousel-control-next {
+  right: -55px !important;
+}
+// .carousel {
+//   height: 525px !important;
+// }
+@media (max-width: 740px) {
+  .carousel-control-prev {
+    display: none !important;
+
+  }
+  .carousel-control-next {
+   display: none !important;
+ 
+  }
+  .content-left {
+    margin-top: 0 !important;
+    
+  }
+  .banner-text {
+    h2 {
+      width: 70%;
+      color: #204322;
+      font-family: Inter;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 60px; /* 66.667% */
+      letter-spacing: -0.408px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+      letter-spacing: -0.408px;
+    }
+  }
+}
+@media (min-width: 741px) and (max-width: 1024px) {
+  .banner-text {
+    h2 {
+      width: 60%;
+      color: #204322;
+      font-family: Inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 45px; /* 66.667% */
+      letter-spacing: -0.408px;
+    }
+    p {
+      color: #666;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 187.5% */
+      letter-spacing: -0.408px;
+    }
+  }
+  .carousel-control-prev {
+    left: -10px !important;
+  }
+  .carousel-control-next {
+    right: -10px !important;
+  }
+  .banner-right-img{
+    // max-width: 400px;
+    object-fit: contain;
+  }
+  
+}
+
+@media (max-width: 979px){
+  .banner-right-img{
+    max-width: 350px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 979px){
+  .banner-right-img{
+    max-width: 350px;
+    object-fit: contain;
+  }
+}
+.banner-right-img{
+  // max-width: 400px;
+  object-fit: contain;
+}
+@media (max-width: 1056px){
+  .carousel-control-prev {
+    left: -10px !important;
+  }
+  .carousel-control-next {
+    right: -10px !important;
+  }
+}
+@media (max-width: 14106px){
+  .banner-right-img{
+    // max-width: 400px;
+    object-fit: contain;
+    max-width: 400px;
+  }
+
+  .carousel-control-next {
+    right: -10px !important;
+  }
+}
+.btn-shop-now{
+  background-color: #52C452 !important;
+  color: #fff !important;
+}

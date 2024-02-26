@@ -1,0 +1,16 @@
+@import '../../setting';
+
+.service-detail-main{
+    min-height: 100vh;
+    margin-top: $h_topbar;
+}
+.img-banner{
+    height: 450px;
+    object-fit: cover;
+}
+.img-content{
+   
+}
+.img-content-wrap{
+     position: relative;
+}

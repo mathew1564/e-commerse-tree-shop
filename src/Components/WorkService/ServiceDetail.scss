@@ -1,0 +1,118 @@
+@import "../../setting";
+.margin-top {
+  margin-top: 100px;
+}
+
+.service-detail-main {
+  font-family: $font_primary;
+  min-height: 100vh;
+  margin-top: $h_topbar;
+  .p-breadcrumb {
+    border: none;
+  }
+}
+.img-banner {
+  height: 450px;
+  object-fit: cover;
+}
+.img-content {
+
+}
+.img-content-wrap {
+  position: relative;
+  i {
+    color: gray;
+    font-weight: 200;
+  }
+}
+.content-main {
+  p {
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .title-name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #777777;
+  }
+}
+.form-img-main {
+  position: relative;
+  .img-form {
+    filter: brightness(0.2) contrast(0.8) saturate(1.2);
+    height: 550px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+.form-contact-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+.form-contact {
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: calc($h_nav_mb + 20px);
+}
+.title-contact {
+  font-size: 40px;
+  font-weight: 700;
+}
+.content-left {
+  p {
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.form-info {
+  border: none !important;
+  &::placeholder {
+    font-size: 18px;
+  }
+}
+
+.form-textarea{
+    resize: none;
+}
+@media (max-width:"739px"){
+    .img-banner{
+        height: 300px !important;
+    }
+    .title-contact {
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 700;
+      }
+      .form-img-main {
+        position: relative;
+        .img-form {
+          filter: brightness(0.2) contrast(0.8) saturate(1.2);
+          height: 800px;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+}
+@media (min-width:'740px') and (max-width:'1023px'){
+    .form-img-main {
+        position: relative;
+        .img-form {
+          filter: brightness(0.2) contrast(0.8) saturate(1.2);
+          height: 800px;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+      .img-content-wrap {
+        display: inline-block;
+      }
+
+}

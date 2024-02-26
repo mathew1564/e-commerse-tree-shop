@@ -1,0 +1,62 @@
+.care-plant {
+    position: relative;
+    .green-title {
+        color: #52C452;
+    }
+    .container-img {
+        text-align: center;
+    }
+    .care-img {
+        width: 331px;
+        @media (max-width:400px) {
+            display: none;
+        }
+    }
+    .group-button {
+       justify-self: flex-end;
+        .button-item {
+            
+            justify-content: center;
+            display: inline-flex;
+            align-items: center;
+            width: 76px;
+            height: 34px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-left: 20px;
+            cursor: pointer;
+            &:hover {
+                color: #52C452;
+                background-color: #E7F7EA;
+            }
+        }
+        .button-plants {
+            background-color: #E7F7EA;
+            box-shadow: 0 2px 2px rgba(167, 235, 173, 1);
+            border-bottom: #A7EBAD 4px solid;
+        }
+        .button-tool {
+            background-color: #9FDEA5;
+            box-shadow: 0 2px 2px rgb(101, 161, 106);
+            border-bottom: rgb(72, 146, 78) 4px solid;
+
+           
+        }
+    }
+    @media (max-width:992px) {
+        text-align: center;
+        
+    }
+}
+@media (max-width:'281px'){
+    .contain-main{
+        text-align: center !important;
+        img{
+            display: none !important;
+        }
+        .title-content{
+            margin-left: 0 !important;
+        }
+    }
+}

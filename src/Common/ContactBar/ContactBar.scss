@@ -1,0 +1,95 @@
+@import "../../setting";
+.contact-bar {
+  z-index: 3;
+  font-family: $font_primary;
+  max-width: 172px;
+  height: 250px;
+  border-radius: 10px 0px 0px 10px;
+  background: $bg_btn_2;
+  box-shadow: 0px -7px 26px 12px rgba(74, 134, 70, 0.15);
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  top: calc($h_topbar + 150px);
+  padding: 25px 20px 15px 15px;
+  transform: translateX(115px) !important;
+  &:hover {
+    transform: translateX(0px) !important;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    color: #fff;
+    .link {
+      list-style: none;
+      display: block;
+      li {
+        min-width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &:hover {
+          color: #3ebd4c;
+          font-weight: 600;
+        }
+        .icon {
+          width: 32px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .contact-bar-mb {
+    z-index: 90;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba($color: #000000, $alpha: 0.3);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #fff;
+    justify-content: space-around;
+    margin: 0;
+    .link {
+      padding: 5px;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      li {
+        color: #000000;
+        &:hover {
+          color: #008802;
+          font-weight: 600;
+        }
+        .icon-mb {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.icon-mb {
+  span {
+
+    color: #5b5b5b;
+  }
+  p {
+    font-size: 12px;
+    color: #454545;
+  }
+}

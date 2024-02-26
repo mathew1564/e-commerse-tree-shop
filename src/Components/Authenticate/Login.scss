@@ -1,0 +1,68 @@
+
+    .login {
+
+        .login-img {
+            width: 100%;
+            object-fit: cover;
+    
+            height: 300px;
+        }
+
+        .form-control {
+            border-bottom: 1px solid #ccc!important;
+            border-top:none!important ;
+            border-left:none!important ;
+            border-right:none!important ;
+        }
+        .form-control:focus {
+            background: transparent;
+            outline: none !important;
+            box-shadow: none !important;
+            // border: none!important;
+            border-bottom: #3EBD4C 1px solid!important;
+            border-top:none!important ;
+            border-left:none!important ;
+            border-right:none!important ;
+          }
+
+          .form-check-input:checked {
+            background-color: #3EBD4C; /* Mã màu tùy chọn */
+            border-color: #3EBD4C; /* Mã màu tùy chọn */
+          }
+          .forgot {
+          
+            font-size: small;
+            color: #888;
+            &:hover {
+                color: #3EBD4C;
+                text-decoration: underline 1px solid;
+            }
+          }
+          .signin {
+            width: 60%;
+          }
+        
+          .icon-face {
+            color: #fff;
+            background-color: #0c88ef;
+            border-radius: 50%;
+        }
+
+        .icon-gg {
+            color: #fff;
+            background-color: #dc4e41;
+            border-radius: 50%;
+        }
+        .password {
+            position: relative;
+            .eye {
+                position: absolute;
+                right: 30px;
+                top:38px;
+                font-weight: bold;
+                font-size: x-large;
+            }
+        }
+          
+            
+    }

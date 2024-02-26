@@ -1,0 +1,53 @@
+@import '../../setting';
+* {
+    font-family: $font_primary;
+}
+
+.blog {
+    // overflow: hidden;
+    margin-top: 76px;
+    // position: relative;
+    overflow: hidden;
+    // .title {
+    //     position: absolute;
+    //     top: 50%;
+    //     right: 50%;
+    //     width: 0px;
+    //     padding-right: 100px;
+    //     padding-left: 100px;
+
+    //     background-color: black;
+    //     // padding: 10px;
+    // }
+
+    .logo-baner 
+    {   
+        position: relative;
+        width: 100%;
+        height: 450px ;
+        z-index: -1!important;
+        object-fit: cover;
+    }
+    .search-input {
+        width: 500px!important;
+        @media (max-width:500px) {
+            width: 100% !important;
+        }
+    }
+    .p-breadcrumb {
+        border: none;
+    }
+    .input-group-text {
+        border: var(--bs-border-width) solid var(--bs-border-color)!important;
+    }
+}
+@media (max-width:786px){
+    .logo-baner{
+        height: 300px !important;
+    }
+}
+@media (max-width:425px){
+    .logo-baner{
+        height: 200px !important;
+    }
+}

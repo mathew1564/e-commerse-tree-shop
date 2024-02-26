@@ -1,0 +1,412 @@
+@import '../../../../setting';
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.products-details-master {
+    margin-top: 50px;
+    font-family: $font_primary;
+    font-size: 18px;
+
+    .products-details-div {
+        .breadcrum-posi {
+            margin-top: 50px;
+            .p-breadcrumb {
+                border: none;
+            }
+        }
+
+        .name-plant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #255127;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+        }
+
+        .img-div {
+            margin-top: 20px;
+        }
+
+        .description-plan {
+            margin-top: 65px;
+
+            .label-smalltext {
+                color: #000;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .smalltext-des {
+                color: #666;
+                font-family: Inter;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .add-product-div {
+                display: flex;
+                justify-content: space-between;
+                width: 280px;
+
+                .buynow {
+                    background-color: #3EBD4C;
+                    border: #3EBD4C;
+
+                    height: 37.5px;
+
+                    &:hover {
+                        color: #666;
+                    }
+                }
+
+                .icon-buynow {
+                    background-color: #E96F00;
+                    border: #E96F00;
+                    height: 37px;
+
+                }
+
+                .input-count {
+                    width: 47px;
+                    height: 37px;
+                    // border-radius: 15px;
+                    border: 1px solid #666;
+                    background: #FFF;
+                    text-align: centert;
+
+                }
+
+                .input-count:focus {
+                    outline: none;
+                }
+
+                .button-count {
+                    border: 1px solid #666;
+                    background: rgba(234, 223, 223, 0.96);
+
+                    width: 30px;
+                    height: 37px;
+                }
+
+                @media screen and (min-width: 541px) and (max-width: 768px) {
+                    width: 230px;
+
+                    .input-count {
+                        width: 35px;
+                    }
+
+                    .button-count {
+                        width: 25px;
+                    }
+                }
+
+                @media screen and (min-width: 0px) and (max-width: 300px) {
+                    width: 240px;
+
+                    .input-count {
+                        width: 35px;
+                    }
+
+                    .button-count {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+
+        .label-howto {
+            margin-top: 100px;
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .howtoplant-div {
+            margin-top: 60px;
+
+            .img-howtoplant {
+                width: 510px;
+                height: 338px;
+                padding-bottom: 10px;
+            }
+
+            .description-howtoplant {
+                .label-smalltext {
+                    color: #000;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                .smalltext-des {
+                    color: #666;
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .label-review {
+            margin-top: 90px;
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+        .review-div {
+            border-top: 1px solid #CCC;
+            border-bottom: 1px solid #CCC;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-left: 64px;
+
+            @media screen and (max-width: 399px) {
+                padding: 0 5px;
+
+            }
+
+            .avatar-review {
+                margin-top: -62px;
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+
+                @media screen and (max-width: 399px) {
+                    width: 55px;
+                    height: 55px;
+                    margin-top: 3px;
+                }
+            }
+
+            .p-rating .p-rating-item .p-rating-icon.p-icon {
+                width: 1.400rem;
+                height: 2.00rem;
+
+                @media screen and (max-width: 399px) {
+                    width: 1rem;
+                    height: 1.2rem;
+
+                }
+
+                @media screen and (max-width: 310px) {
+                    width: 0.7rem;
+                    height: 1rem;
+
+                }
+            }
+
+            .rating-other-user {
+                margin-top: 30px;
+                padding-left: 30px;
+
+
+                @media screen and (max-width: 400px) {
+                    padding-left: 50px;
+                    margin-top: 0px;
+                }
+            }
+
+            .rating-other-user-des {
+                padding-left: 30px;
+
+                @media screen and (max-width: 400px) {
+                    padding-left: 50px;
+
+                }
+
+            }
+
+            .content-review {
+                color: #999;
+                font-family: Inter;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                @media screen and (max-width: 399px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 310px) {
+                    font-size: 14px;
+                }
+
+            }
+
+            .author-review {
+                margin-top: 5px;
+                color: #666;
+                font-size: 18px;
+                font-weight: 700;
+
+                @media screen and (max-width: 399px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 310px) {
+                    font-size: 14px;
+                }
+            }
+
+            .date-review {
+                color: #666;
+                font-size: 15px;
+                font-weight: 500;
+
+                @media screen and (max-width: 399px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 310px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+        .your-review-div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px 60px;
+            border: 1px solid #CCC;
+            width: 100%;
+    
+            // @media screen and (min-width: 768px) and (max-width: 1024px) {
+            //     width: 88%;
+    
+            // }
+    
+            @media screen and (min-width: 400px) and (max-width: 767px) {
+                width: 93%;
+    
+            }
+    
+            @media screen and (max-width: 399px) {
+                width: 89%;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 10px 10px !important;
+            }
+    
+    
+    
+            .p-rating .p-rating-item .p-rating-icon.p-icon {
+                width: 1.400rem;
+                height: 1.6rem;
+    
+                @media screen and (max-width: 399px) {
+                    width: 1rem;
+                    height: 1.2rem;
+                }
+            }
+    
+            .your-review-label {
+                color: #666;
+                font-family: Inter;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+    
+                @media screen and (max-width: 399px) {
+                    font-size: 16px;
+                    // white-space: nowrap;
+                }
+            }
+    
+            .your-comment-label {
+                color: #666;
+                font-size: 21px;
+                font-weight: 500;
+    
+                @media screen and (max-width: 399px) {
+                    font-size: 16px;
+    
+                }
+            }
+    
+            .textarea-comment {
+                width: 100%;
+                border-radius: 13px;
+    
+                @media screen and (max-width: 399px) {
+                    height: 30px !important;
+                    padding-left: 13px !important;
+    
+                }
+            }
+    
+            .your-name-lable {
+                color: #666;
+                font-size: 21px;
+                font-weight: 500;
+    
+                @media screen and (max-width: 399px) {
+                    font-size: 16px;
+                }
+            }
+    
+            .input-comment {
+                width: 100%;
+                border-radius: 13px;
+    
+                @media screen and (max-width: 399px) {
+                    height: 30px;
+                }
+            }
+    
+            .rule-comment {
+                font-size: 17px;
+                margin-left: 10px;
+    
+                @media screen and (max-width: 399px) {
+                    font-size: 16px;
+                }
+            }
+        }
+        
+        .label-similar {
+            color: #000;
+            font-size: 24px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+
+    }
+}

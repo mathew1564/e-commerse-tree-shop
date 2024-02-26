@@ -1,0 +1,61 @@
+@import '../../../setting';
+
+.service {
+    font-family: $font_primary;
+    background-color: #ECF1ED;
+    margin-top: 20px;
+
+    .img-service {
+        width: 384px;
+        border: #fff 4px solid;
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
+
+    .content {
+        padding: 0 80px;
+        @media (max-width:992px) {
+            text-align: center;
+        }
+    }
+
+    .title1 {
+        color: #204322;
+    }
+
+    .text1 {
+        color: #666;
+    }
+
+    .title2 {
+        color: #4D6A4E;
+        font-weight: 600;
+    }
+
+    .button-service {
+        text-align: center;
+        background-color: #99AF80;
+        color: #fff;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-weight: 500;
+        &:hover {
+            color: #004905;
+            background-color: #52C452;
+
+        }
+    }
+}
+.link-hover:hover{
+    .title2{
+        color: #bf8900;
+    }
+}
+@media (max-width:'281px') {
+    .content{
+        padding: 5px !important;
+    }
+    
+}

@@ -1,0 +1,54 @@
+@import "../../../setting";
+.content-statis {
+  display: flex;
+  font-family: $font_primary;
+  .statis-item {
+    display: flex;
+    flex-direction: column;
+    .number {
+      font-size: 30px;
+      font-weight: 900;
+      color: $color_text;
+      span {
+        font-size: 30px;
+        font-weight: 900;
+      }
+    }
+    span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 739px) {
+  .content-statis {
+    .statis-items {
+        justify-content: center;
+        text-align: center;
+      .statis-item {
+        .number {
+          font-size: 25px;
+          font-weight: 900;
+          color: $color_text;
+          span {
+            font-size: 25px;
+            font-weight: 900;
+          }
+        }
+        span {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media (max-width:376px){
+  .statis-items{
+    flex-direction: column;
+    text-align: center;
+  }
+  .statis-item{
+    justify-content: center;
+  }
+}
